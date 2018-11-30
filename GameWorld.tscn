@@ -18,6 +18,7 @@ script = ExtResource( 3 )
 SERVER_PORT = 8080
 MAX_PLAYERS = 50
 SERVER_IP = "127.0.0.1"
+RUN_AS_SERVER = false
 
 [node name="PlayersContainer" type="Node" parent="." index="2"]
 

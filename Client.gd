@@ -12,7 +12,6 @@ var playerInfo = {
 	}
 
 func startClient():
-	print("Trying to create a client");
 	server.create_client(playerInfo);
 
 func _input(event):
@@ -24,3 +23,8 @@ slave func create_player(id, info):
 	player.set_name(str(id))
 	player.position = startPos
 	playersContainer.call_deferred("add_child", player)
+	print("Player Created")
+	rpc("notifyServer")
+	
+remote func notifyServer():
+	print("Client Created")

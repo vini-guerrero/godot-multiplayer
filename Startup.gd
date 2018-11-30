@@ -8,6 +8,8 @@ func _ready():
 	if (args):
 		if (args[0] == "--server"):
 			serverNode.create_server()
+	elif (!!serverNode.RUN_AS_SERVER):
+		serverNode.create_server()
 	else:
 		clientNode.startClient()
 

@@ -3,6 +3,7 @@ extends Node
 export var SERVER_PORT = 8080;
 export var MAX_PLAYERS = 50;
 export var SERVER_IP = "127.0.0.1"
+export var RUN_AS_SERVER = false
 onready var client = get_node("../Client")
 var peer
 
